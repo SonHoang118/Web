@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+.btnToTop {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(200, 200, 200, 0.45);
+    color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.1s linear;
+    font-weight: 500;
+    position: fixed;
+    z-index: 9;
+    right: 20px;
+    animation: showBtnToTop ease-in-out .3s forwards;
+}
+
+@keyframes showBtnToTop {
+    0% {
+        bottom: -15%;
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    100% {
+        bottom: 30px;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
